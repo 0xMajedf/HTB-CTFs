@@ -1,2 +1,2 @@
 # HTB-CTFs
-Solving CTFs until i become PRO
+Solving CTFs until i become a Hacker
